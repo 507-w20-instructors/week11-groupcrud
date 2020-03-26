@@ -50,7 +50,6 @@ insert_instructors = '''
 '''
 
 for instr in instructors:
-    print("inserting", instr)
     cur.execute(insert_instructors, instr)
 
 conn.commit()
